@@ -58,6 +58,10 @@ super + F12
 # SUPER + ... KEYS
 #################################################################
 
+#show keybindings
+super + ctrl + s
+    kiro-keybindings
+
 #Code
 super + e
     code
@@ -65,10 +69,6 @@ super + e
 #Browser
 super + w
     firefox
-
-#Conky-toggle
-super + c
-    conky-toggle
 
 #archlinux-logout
 super + x
@@ -136,6 +136,10 @@ super + shift + s
 #archlinux-tweak-tool
 ctrl + alt + e
     archlinux-tweak-tool
+
+#obs
+ctrl + alt + d
+    obs
 
 #alacritty-tweak-tool
 ctrl + alt + a

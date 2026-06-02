@@ -2,7 +2,7 @@
   <img src="kiro.jpg" alt="Kiro" width="220" />
 </p>
 
-# edu-chadwm
+# kiro-chadwm
 
 Educational / tutorial repository for **chadwm**, a patched-out dwm flavour by [siduck](https://github.com/siduck/chadwm) that ships eye-candy features (bar, gaps, layouts) on top of suckless dwm. Part of the `~/EDU/` learning series.
 
@@ -18,6 +18,10 @@ A live, hands-on copy of this stack lives at `~/.config/ohmychadwm/` on Erik's m
 
 Originally built on [siduck/chadwm](https://github.com/siduck/chadwm). Last upstream verification: 19/12/2025 — system icon size.
 
+## Keybindings
+
+Press **`Super + Ctrl + S`** to open the searchable **kiro-keybindings** cheatsheet — an on-screen, type-to-filter list of every shortcut, identical across all Kiro desktops. The full list also ships as a plain-text [`keybindings.txt`](etc/skel/.config/chadwm/keybindings.txt) in the config directory.
+
 ## Installation
 
 ### From `nemesis_repo` (recommended)
@@ -25,19 +29,19 @@ Originally built on [siduck/chadwm](https://github.com/siduck/chadwm). Last upst
 ```ini
 [nemesis_repo]
 SigLevel = Never
-Server = https://erikdubois.github.io/$repo/$arch
+Server = https://kirodubes.github.io/$repo/$arch
 ```
 
 ```bash
 sudo pacman -Syu
-sudo pacman -S edu-chadwm
+sudo pacman -S kiro-chadwm
 ```
 
 ### Manual
 
 ```bash
-git clone https://github.com/erikdubois/edu-chadwm.git
-cd edu-chadwm
+git clone https://github.com/kirodubes/kiro-chadwm.git
+cd kiro-chadwm
 sudo cp -r etc/skel/. /etc/skel/
 sudo cp -r usr/. /usr/
 ```

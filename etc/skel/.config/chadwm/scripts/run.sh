@@ -49,11 +49,6 @@ sxhkd -c ~/.config/chadwm/sxhkd/sxhkdrc &
 #feh --bg-fill /usr/share/backgrounds/archlinux/arch-wallpaper.jpg &
 #feh --bg-fill ~/.config/chadwm/wallpaper/chadwm.jpg &
 feh --bg-fill ~/.config/chadwm/wallpaper/chadwm2.jpg &
-#feh --randomize --bg-fill /home/erik/Insync/Apps/Wallhaven/*
-
-
-#nitrogen --set-zoom-fill --random /home/erik/Insync/Apps/Desktoppr/ --head=0
-#nitrogen --set-zoom-fill --random /home/erik/Insync/Apps/Desktoppr/ --head=1
 
 #wallpaper for other Arch based systems
 #feh --bg-fill /usr/share/archlinux-tweak-tool/data/wallpaper/wallpaper.png &
