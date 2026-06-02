@@ -1,4 +1,4 @@
-# CLAUDE.md — edu-chadwm
+# CLAUDE.md — kiro-chadwm
 
 ## Project overview
 

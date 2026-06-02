@@ -28,11 +28,9 @@ function run {
 #run xrandr --output HDMI2 --right-of HDMI1 --auto
 #run xrandr --output LVDS1 --mode 1366x768 --output DP3 --mode 1920x1080 --right-of LVDS1
 #run xrandr --output VGA-1 --primary --mode 1360x768 --pos 0x0 --rotate normal
-#autorandr horizontal
-#run "autorandr horizontal"
+
 run "nm-applet"
 #run "pamac-tray"
-#run "protonvpn-app"
 run "variety -n"
 run "flameshot"
 run "xfce4-power-manager"
@@ -43,12 +41,11 @@ run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 fastcompmgr -c &
 run "numlockx on"
 run "volctl"
-#run "pa-applet"
 sxhkd -c ~/.config/chadwm/sxhkd/sxhkdrc &
 #you can set wallpapers in themes as well
 #feh --bg-fill /usr/share/backgrounds/archlinux/arch-wallpaper.jpg &
 #feh --bg-fill ~/.config/chadwm/wallpaper/chadwm.jpg &
-feh --bg-fill ~/.config/chadwm/wallpaper/chadwm2.jpg &
+feh --bg-fill ~/.config/chadwm/wallpaper/chadwm1.png &
 
 #wallpaper for other Arch based systems
 #feh --bg-fill /usr/share/archlinux-tweak-tool/data/wallpaper/wallpaper.png &
