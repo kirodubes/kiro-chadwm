@@ -13,6 +13,14 @@ function run {
   fi
 }
 
+# ── Monitor layout ────────────────────────────────────────────────────────────
+# Apply a saved arandr/xrandr screen layout named after the current user.
+# Generate your layout with arandr, save it to ~/.screenlayout/<username>.sh
+# Uncomment the xrandr line below if you are running inside VirtualBox.
+#run xrandr --output Virtual-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal
+# screen layout generated with arandr
+[ -f "$HOME/.screenlayout/$(whoami).sh" ] && sh "$HOME/.screenlayout/$(whoami).sh"
+
 #run "signal-in-tray"
 
 #for virtualbox
