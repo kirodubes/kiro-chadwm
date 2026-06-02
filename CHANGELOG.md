@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026.06.02
+
+### What Changed
+- Brought `scripts/run.sh` in line with the new canonical [TWM autostart standard](/home/erik/Insync/Kiro/Kiro-HQ/AUTOSTART_TEMPLATE.md) (gold standard: ohmychadwm `run.sh`). The session-startup script is now documented, sectioned, and free of the accumulated rubbish — without changing which apps chadwm autostarts.
+- Removed the dead cruft: the leading hardware-specific `#xrandr` dump, the commented `#xrdb`/`#xbacklight`/`#xset` lines, the wall of `#run xrandr` per-monitor variants, and the trailing pile of commented `#run insync/spotify/discord/...` app examples.
+- Adopted the standard's `.fehbg`-restore wallpaper pattern: restore the user's last feh wallpaper if present, falling back to `chadwm1.png` (was: always force `chadwm1.png`).
+
+### Technical Details
+- Replaced the loose `function run { ... pgrep $1 ... }` helper with the canonical `run()` (POSIX `run() {`, exact-match `pgrep -x "$(basename "$1" | head -c 15)"`) — exact matching removes the need for any per-app special-casing.
+- Added the documented header block and `# ──` section dividers in the standard order: header → run() → monitor → tray → compositor → keyboard → volume → wallpaper → status bar → WM loop.
+- Preserved chadwm's documented per-WM exceptions: status bar stays `bar.sh` (not slstatus), compositor default stays fastcompmgr (toggle on `super + g`), and the chadwm-family WM-loop tail (`while type chadwm …`) is unchanged.
+- Validated with `sh -n` (valid POSIX sh).
+
+### Files Modified
+- etc/skel/.config/chadwm/scripts/run.sh
+
 ## 2026.06.01
 
 ### What Changed
