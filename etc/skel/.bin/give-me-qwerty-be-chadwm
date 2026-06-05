@@ -27,6 +27,10 @@ echo
 user=$( who | cut -d ' ' -f1 | uniq)
 
 cp -v /home/$user/.config/chadwm/chadwm/config.def-qwerty.h /home/$user/.config/chadwm/chadwm/config.def.h
+
+# Keep the keybindings cheatsheet (kiro-keybindings app + any PDF) in sync with the layout.
+cp -v /home/$user/.config/chadwm/keybindings-qwerty.txt /home/$user/.config/chadwm/keybindings.txt
+
 if [ -f /home/$user/.config/chadwm/chadwm/config.h ]; then
 	rm -v /home/$user/.config/chadwm/chadwm/config.h
 fi
