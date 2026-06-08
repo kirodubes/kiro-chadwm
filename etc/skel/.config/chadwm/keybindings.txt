@@ -35,7 +35,7 @@
   super + F5                meld
   super + F6                vlc
   super + F7                virtualbox
-  super + F9                lollypop
+  super + F9                virt-manager
   super + F10               spotify
   ctrl + alt + s            spotify
   super + v                 pavucontrol
