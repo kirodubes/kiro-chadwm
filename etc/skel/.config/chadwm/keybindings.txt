@@ -26,6 +26,7 @@
   ctrl + alt + b            brave
   ctrl + alt + c            chromium
   ctrl + alt + g            chromium
+  ctrl + alt + i            kiro-iso-builder
   ctrl + alt + o            opera
   super + shift + Return    thunar (file manager)
   super + shift + KP_Enter  thunar (file manager)
