@@ -406,10 +406,3 @@ ctrl + alt + o
 #Compositor Toggle
 super + g
     ~/.config/chadwm/scripts/fastcompmgr-toggle.sh
-
-#update
-ctrl + alt + shift + F1
-   update-system
-
-super + ctrl + shift + F1
-   update-system
