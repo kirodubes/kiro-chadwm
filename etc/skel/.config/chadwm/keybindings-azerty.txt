@@ -1,7 +1,7 @@
 ###############################################################################
 #  KEYBINDINGS — chadwm (AZERTY)
 #  Source: etc/skel/.config/chadwm/chadwm/config.def.h (AZERTY) + etc/skel/.config/chadwm/sxhkd/sxhkdrc
-#  Generated: 2026.06.30 by /kiro-keybindings-all — DO NOT EDIT BY HAND
+#  Generated: 2026.10.19 by /kiro-keybindings-all — DO NOT EDIT BY HAND
 ###############################################################################
 
 ── 1. Applications & Launchers ───────────────────────────────────────────────
@@ -71,6 +71,12 @@
   alt + shift + f         variety favourite + pywal recolor
   alt + shift + t         variety trash + pywal recolor
   alt + shift + u         pywal: recolor from current wallpaper
+  super + ctrl + a        pavucontrol
+  super + ctrl + shift + a  alacritty -e claude (AI agent)
+  super + shift + f       thunar (file manager)
+  super + shift + b       vivaldi-stable (browser)
+  super + shift + n       code (editor)
+  super + shift + m       spotify
 
 ── 2. Window Management ───────────────────────────────────────────────────────
   super + j               focus next window
@@ -153,6 +159,9 @@
   XF86AudioStop           stop (playerctl)
   XF86MonBrightnessUp     increase screen brightness
   XF86MonBrightnessDown   decrease screen brightness
+  XF86AudioMicMute        toggle microphone mute
+  alt + XF86AudioRaiseVolume  raise volume by 1%
+  alt + XF86AudioLowerVolume  lower volume by 1%
 
 ── 7. Screenshots ─────────────────────────────────────────────────────────────
   super + u               region screenshot to clipboard (maim)
@@ -173,3 +182,4 @@
   super + shift + r       restart chadwm
   ctrl + alt + Delete     quit chadwm
   super + shift + s       reload sxhkd
+  super + ctrl + l        archlinux-betterlockscreen (lock screen)
